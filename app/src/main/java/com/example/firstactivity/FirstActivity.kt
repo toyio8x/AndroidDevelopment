@@ -8,6 +8,8 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import com.google.gson.Gson
+import okhttp3.OkHttpClient
 import org.w3c.dom.Text
 
 class FirstActivity : AppCompatActivity() {
@@ -21,6 +23,7 @@ class FirstActivity : AppCompatActivity() {
         val regButton:TextView=findViewById(R.id.goto_register)
 //        val loginBg:ImageView=findViewById(R.id.LoginBg)
 //        val progressBar:ProgressBar=findViewById(R.id.processLogin)
+
 
         button1.setOnClickListener{
             val inputUsername=usernameText.text.toString()
@@ -47,6 +50,7 @@ class FirstActivity : AppCompatActivity() {
             startActivity(intent)
         }
         supportActionBar?.hide()
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
