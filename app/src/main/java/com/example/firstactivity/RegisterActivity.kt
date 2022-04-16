@@ -16,7 +16,7 @@ class RegisterActivity : AppCompatActivity() {
         button2.setOnClickListener{
             Toast.makeText(this,"暂未开放注册！",Toast.LENGTH_SHORT).show()
 //            val intent=Intent(Intent.ACTION_VIEW)
-//            intent.data= Uri.parse("https://cn.bing.com")
+//            intent.data= Uri.parse("https://www.baidu.com")
 //            startActivity(intent)
         }
     }
