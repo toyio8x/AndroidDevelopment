@@ -134,11 +134,11 @@ class ActivityMain :AppCompatActivity (),View.OnClickListener{
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.exit_login ->{
-                val intent = Intent(this,ActivityLogin::class.java)
-                startActivity(intent)
-            finish()
-            }
+//            R.id.exit_login ->{
+//                val intent = Intent(this,ActivityLogin::class.java)
+//                startActivity(intent)
+//            finish()
+//            }
 
         }
         return true
