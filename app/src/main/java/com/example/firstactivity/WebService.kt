@@ -8,4 +8,7 @@ interface WebService {
 
     @GET("/user/login")
     fun gotoLogin(@Query("account")account:String,@Query("password")password:String): Call<HttpResult<Boolean>>
+
+    @GET("/user/save")
+    fun gotoRegister(@Query("account")account: String,@Query("password")password: String): Call<HttpResult<Boolean>>
 }
