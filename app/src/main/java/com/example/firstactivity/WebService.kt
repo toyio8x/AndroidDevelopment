@@ -11,4 +11,7 @@ interface WebService {
 
     @GET("/user/save")
     fun gotoRegister(@Query("account")account: String,@Query("password")password: String): Call<HttpResult<Boolean>>
+
+    @GET("/news/get")
+    fun getNews():Call<HttpResult<List<News>>>
 }
