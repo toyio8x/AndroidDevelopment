@@ -56,7 +56,9 @@ class FragmentNews: ListFragment() {
                     newsList.addAll(list.data)
                     Log.d("FragmentNews", "code is ${list.code}")
                     Log.d("FragmentNews", "message is ${list.message}")
-                    Log.d("FragmentNews", "data is ${newsList.toString()}")
+                    for(x in list.data) {
+                        Log.d("FragmentNews", "data is $x")
+                    }
                     if (list.code.equals("200")) {
                         Toast.makeText(activity,"刷新成功", Toast.LENGTH_SHORT).show()
                     }
